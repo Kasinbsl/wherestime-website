@@ -2,17 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/apps/mywallet/favicon.ico" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>"
+
+    <!-- iOS Safari PWA support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>exp</title>
-    <script type="module" crossorigin src="/apps/mywallet/assets/index-DspI9uF-.js"></script>
+    <meta name="apple-mobile-web-app-title" content="MyWallet" />
+    <link rel="apple-touch-icon" href="/apps/mywallet/icons/icon-180x180.png" />
+
+    <!-- Windows PWA support -->
+    <meta name="msapplication-TileColor" content="#1a1a2e" />
+    <meta name="msapplication-TileImage" content="/apps/mywallet/icons/icon-144x144.png" />
+
+    <!-- This single viewport tag disables zoom -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="description" content="My Wallet - Personal Expense Tracker" />
+
+    <title>My Wallet</title>
+    <script type="module" crossorigin src="/apps/mywallet/assets/index-Baofngsz.js"></script>
     <link rel="stylesheet" crossorigin href="/apps/mywallet/assets/index-ClYX2eNN.css">
-  </head>
+  <link rel="manifest" href="/apps/mywallet/manifest.json"><script id="vite-plugin-pwa:register-sw" src="/apps/mywallet/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
   </body>
